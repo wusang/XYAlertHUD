@@ -10,6 +10,7 @@
 #import <Masonry/Masonry.h>
 #import "XYAlertHUD.h"
 #import "UIColor+XY.h"
+#import "UIImage+XY.h"
 @interface XYKlgEmptyAlert ()
 
 @property (nonatomic,strong) UIImageView *bgImgView;

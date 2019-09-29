@@ -12,7 +12,7 @@
 #import "UIColor+XY.h"
 #import "UIView+XY.h"
 #import "UIImage+XY.h"
-
+#import "NSBundle+XY.h"
 #define kLancooScreenWidth [UIScreen mainScreen].bounds.size.width
 #define kLancooScreenHeight [UIScreen mainScreen].bounds.size.height
 #define kLancooWidth (kLancooScreenWidth * 0.8)
