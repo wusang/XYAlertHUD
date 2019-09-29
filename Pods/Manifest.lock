@@ -1,0 +1,29 @@
+PODS:
+  - Masonry (1.1.0)
+  - TFHpple (2.0.0)
+  - XYExtensions (1.0.0):
+    - XYExtensions/Foundation (= 1.0.0)
+    - XYExtensions/UIKit (= 1.0.0)
+  - XYExtensions/Foundation (1.0.0):
+    - TFHpple
+  - XYExtensions/UIKit (1.0.0):
+    - XYExtensions/Foundation
+
+DEPENDENCIES:
+  - Masonry
+  - XYExtensions (= 1.0.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Masonry
+    - TFHpple
+    - XYExtensions
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  TFHpple: a916fe0799eb30aa29b2670d14d5868cdd3a5b81
+  XYExtensions: 81e1b4fe5fea15c7d1fe058bd7ec3f17ea5051a8
+
+PODFILE CHECKSUM: 6f3ebe24f0ccc1d4b1392c57f470035e591330ba
+
+COCOAPODS: 1.7.0.beta.2
