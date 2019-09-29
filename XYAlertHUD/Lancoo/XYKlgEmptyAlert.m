@@ -84,8 +84,8 @@
 }
 - (UIImageView *)bgImgView{
     if (!_bgImgView) {
-//        _bgImgView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"XYAlert.bundle/xy_hud_empty"]];
-        _bgImgView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"XYAlertHUD.bundle/xy_hud_empty"]];
+        _bgImgView = [[UIImageView alloc] initWithImage:[UIImage xy_imageNamed:@"xy_hud_empty" atBundle:XYAlert.alertBundle]];
+//        _bgImgView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"XYAlertHUD.bundle/xy_hud_empty"]];
     }
     return _bgImgView;
 }

@@ -341,8 +341,8 @@
 }
 - (UIImageView *)headImageV{
     if (!_headImageV) {
-//        _headImageV = [[UIImageView alloc] initWithImage:[UIImage xy_imageNamed:@"lancoo_1" atBundle:XYAlert.alertBundle]];
-         _headImageV = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"XYAlertHUD.bundle/xy_hud_topBird"]];
+        _headImageV = [[UIImageView alloc] initWithImage:[UIImage xy_imageNamed:@"xy_hud_topBird" atBundle:XYAlert.alertBundle]];
+//         _headImageV = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"XYAlertHUD.bundle/xy_hud_topBird"]];
     }
     return _headImageV;
 }
