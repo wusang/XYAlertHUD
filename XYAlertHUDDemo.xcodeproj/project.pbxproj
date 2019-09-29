@@ -33,6 +33,7 @@
 		D75C7BB123405A49001743B4 /* XYAlertViewWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = D75C7B9F23405A49001743B4 /* XYAlertViewWindow.m */; };
 		D75C7BB223405A49001743B4 /* XYAlertHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D75C7BA123405A49001743B4 /* XYAlertHUD.m */; };
 		D75C7BB323405A49001743B4 /* XYProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D75C7BA223405A49001743B4 /* XYProgressHUD.m */; };
+		D75C7BB62340C579001743B4 /* XYVipControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = D75C7BB52340C579001743B4 /* XYVipControlView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,8 @@
 		D75C7BA023405A49001743B4 /* XYAlertViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYAlertViewCell.h; sourceTree = "<group>"; };
 		D75C7BA123405A49001743B4 /* XYAlertHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYAlertHUD.m; sourceTree = "<group>"; };
 		D75C7BA223405A49001743B4 /* XYProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYProgressHUD.m; sourceTree = "<group>"; };
+		D75C7BB42340C579001743B4 /* XYVipControlView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYVipControlView.h; sourceTree = "<group>"; };
+		D75C7BB52340C579001743B4 /* XYVipControlView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYVipControlView.m; sourceTree = "<group>"; };
 		E6A0DAEE114043CBA6CE91AB /* Pods-XYAlertHUDDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYAlertHUDDemo.release.xcconfig"; path = "Target Support Files/Pods-XYAlertHUDDemo/Pods-XYAlertHUDDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -211,12 +214,12 @@
 		D75C7B7E23405A48001743B4 /* XYAlertHUD */ = {
 			isa = PBXGroup;
 			children = (
-				D75C7B7F23405A48001743B4 /* XYProgressHUD.h */,
+				D75C7B8723405A49001743B4 /* AlertView */,
+				D75C7B8223405A49001743B4 /* Lancoo */,
 				D75C7B8023405A48001743B4 /* XYAlertHUD.bundle */,
 				D75C7B8123405A49001743B4 /* XYAlertHUD.h */,
-				D75C7B8223405A49001743B4 /* Lancoo */,
-				D75C7B8723405A49001743B4 /* AlertView */,
 				D75C7BA123405A49001743B4 /* XYAlertHUD.m */,
+				D75C7B7F23405A48001743B4 /* XYProgressHUD.h */,
 				D75C7BA223405A49001743B4 /* XYProgressHUD.m */,
 			);
 			path = XYAlertHUD;
@@ -226,9 +229,11 @@
 			isa = PBXGroup;
 			children = (
 				D75C7B8323405A49001743B4 /* XYKlgEmptyAlert.h */,
-				D75C7B8423405A49001743B4 /* XYLancooAlert.m */,
 				D75C7B8523405A49001743B4 /* XYKlgEmptyAlert.m */,
 				D75C7B8623405A49001743B4 /* XYLancooAlert.h */,
+				D75C7B8423405A49001743B4 /* XYLancooAlert.m */,
+				D75C7BB42340C579001743B4 /* XYVipControlView.h */,
+				D75C7BB52340C579001743B4 /* XYVipControlView.m */,
 			);
 			path = Lancoo;
 			sourceTree = "<group>";
@@ -441,6 +446,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D75C7BAF23405A49001743B4 /* XYAlertViewWindowContainer.m in Sources */,
+				D75C7BB62340C579001743B4 /* XYVipControlView.m in Sources */,
 				D75C7BAE23405A49001743B4 /* XYAlertViewHelper.m in Sources */,
 				D75C7BB323405A49001743B4 /* XYProgressHUD.m in Sources */,
 				D75C7B5123404C1B001743B4 /* ViewController.m in Sources */,
