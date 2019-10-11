@@ -8,7 +8,7 @@
 
 #import "XYVipControlView.h"
 #import <Masonry/Masonry.h>
-#import <XYExtensions/XYCategories.h>
+#import <XYExtensions/XYExtensions.h>
 #import "XYAlertHUD.h"
 
 

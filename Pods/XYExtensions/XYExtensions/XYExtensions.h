@@ -1,13 +1,13 @@
 //
-//  XYCategories.h
+//  XYExtensions.h
 //  XYManageTool
 //
 //  Created by wuxiaoyuan on 2019/9/25.
 //  Copyright © 2019 lange. All rights reserved.
 //
 
-#ifndef XYCategories_h
-#define XYCategories_h
+#ifndef XYExtensions_h
+#define XYExtensions_h
 
 //弱引用化
 #define WeakObj(o)      __weak typeof(o) o##Weak = o
@@ -24,6 +24,11 @@
 #define IsStrEmpty(_ref)                  (((_ref) == nil) || ([(_ref) isEqual:[NSNull null]]) ||([(_ref) isEqualToString:@""]))
 #define IsArrEmpty(_ref)                  (((_ref) == nil) || ([(_ref) isEqual:[NSNull null]]) ||([(_ref) count] == 0) || ([(_ref) isKindOfClass:[NSNull class]]))
 #define IsObjEmpty(_ref)                  (((_ref) == nil) || ([(_ref) isEqual:[NSNull null]]) || ([(_ref) isKindOfClass:[NSNull class]]))
+
+// 颜色
+#define XY_ColorWithHex(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+#define XY_ColorWithHexA(rgbValue,aValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:aValue]
+#define XY_RGBToHex(r,g,b,hex) {hex = r << 16 | g << 8 | b;}
 
 /** UIKit */
 #import "UIImage+XY.h"
@@ -49,6 +54,6 @@
 #import "NSMutableAttributedString+XY.h"
 #import "NSFileManager+XY.h"
 
+/** BaseView */
 
-
-#endif /* XYCategories_h */
+#endif /* XYExtensions_h */

@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
 
   s.subspec "Lancoo" do |ss|
     ss.source_files =  "XYAlertHUD/Lancoo/*.{h,m}"
-    ss.dependency 'AlertView'
+    ss.dependency 'XYAlertHUD/AlertView'
   end
 
    # 资源文件

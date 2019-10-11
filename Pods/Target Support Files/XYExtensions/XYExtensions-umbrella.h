@@ -10,7 +10,8 @@
 #endif
 #endif
 
-#import "XYCategories.h"
+#import "XYExtensions.h"
+#import "XYBaseView.h"
 #import "NSArray+XY.h"
 #import "NSBundle+XY.h"
 #import "NSDate+XY.h"
@@ -31,6 +32,11 @@
 #import "UIViewController+XY.h"
 #import "UIWebView+XY.h"
 #import "UIWindow+XY.h"
+#import "NSArray+XYNet.h"
+#import "NSError+XYNetManager.h"
+#import "XYNetManger.h"
+#import "XYNetMonitoring.h"
+#import "XYUploadModel.h"
 
 FOUNDATION_EXPORT double XYExtensionsVersionNumber;
 FOUNDATION_EXPORT const unsigned char XYExtensionsVersionString[];
