@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "XYAlertHUD.h"
 @interface ViewController ()
 
 @end
@@ -17,6 +17,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+//    [[XYLancooAlert lancooAlertWithTitle:@"提示" msg:@"qing" sureTitle:@"23" sureBlock:^{
+//        NSLog(@"123");
+//    }] show];
+    [XYAlert alertSuccessWithMessage:@"vi" confirmBlock:^{
+        
+    }];
+    
+
+//    [XYAlert showErrorWithStatus:@"233"];
 }
 
 

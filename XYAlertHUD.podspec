@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "XYAlertHUD"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "提示框,进度条"
 
   # 项目主页地址
@@ -24,10 +24,14 @@ Pod::Spec.new do |s|
   }
 
   # 需要包含的源文件
-  s.source_files = "XYAlertHUD/*.{h,m}","XYAlertHUD/Lancoo/*.{h,m}"
+  s.source_files = "XYAlertHUD/*.{h,m}"
   
   s.subspec "AlertView" do |ss|
     ss.source_files =  "XYAlertHUD/AlertView/*.{h,m}"
+  end
+
+  s.subspec "Lancoo" do |ss|
+    ss.source_files =  "XYAlertHUD/Lancoo/*.{h,m}"
   end
 
    # 资源文件

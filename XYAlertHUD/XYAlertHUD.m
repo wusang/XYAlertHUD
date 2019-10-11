@@ -24,7 +24,7 @@
     dispatch_once(&onceToken, ^{
         macro = [[XYAlertHUD alloc]init];
         [macro configure];
-//        macro.aBundle = [NSBundle xy_bundleWithCustomClass:XYProgressHUD.class bundleName:@"XYAlertHUD"];
+        macro.aBundle = [NSBundle xy_bundleWithCustomClass:XYProgressHUD.class bundleName:@"XYAlertHUD"];
     });
     return macro;
 }
@@ -40,7 +40,6 @@
     alert.layerCornerRadius = 3;
     alert.backgroundColor = [UIColor whiteColor];
     alert.coverColor = [UIColor colorWithWhite:0 alpha:0.6];
-//    alert.coverColor = [UIColor whiteColor];
     alert.separatorsColor = XYA_Color(0x1379EC);
     
     // 标题
@@ -112,9 +111,7 @@
     }];
     view.frame = CGRectMake(0, 0, alertView.width, 90);
     UIImageView *imgCaution = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, alertView.width, 30)];
-//    imgCaution.image = [UIImage imageNamed:XY_GETBundleResource(name)];
-     imgCaution.image = [UIImage imageNamed:name];
-
+    imgCaution.image = [UIImage imageNamed:XY_GETBundleResource(name)];
     imgCaution.contentMode = UIViewContentModeScaleAspectFit;
     [view addSubview:imgCaution];
     CGFloat labMsgWidth = alertView.width-20;
@@ -271,7 +268,7 @@
     _hud = [XYProgressHUD showHUDAddedTo:[self keyWindow] animated:YES];
     _hud.userInteractionEnabled = NO;
     _hud.mode = XYProgressHUDModeCustomView;
-    UIImage *image = [[UIImage imageNamed:XY_GETBundleResource(@"XY_hud_success")] imageWithRenderingMode:UIImageRenderingModeAutomatic];
+    UIImage *image = [[UIImage imageNamed:XY_GETBundleResource(@"xy_hud_success")] imageWithRenderingMode:UIImageRenderingModeAutomatic];
     _hud.customView = [[UIImageView alloc] initWithImage:image];
     _hud.detailsLabelText = status;
     [self setHudTextAttibute];
