@@ -24,15 +24,11 @@ Pod::Spec.new do |s|
   }
 
   # 需要包含的源文件
-  s.source_files = "XYAlertHUD/*.{h,m}"
+  s.source_files = "XYAlertHUD/*.{h,m}","XYAlertHUD/Lacoo/*.{h,m}"
+
   
   s.subspec "AlertView" do |ss|
     ss.source_files =  "XYAlertHUD/AlertView/*.{h,m}"
-  end
-
-  s.subspec "Lancoo" do |ss|
-    ss.source_files =  "XYAlertHUD/Lancoo/*.{h,m}"
-    ss.dependency 'XYAlertHUD/AlertView'
   end
 
    # 资源文件
