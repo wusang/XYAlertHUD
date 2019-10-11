@@ -23,13 +23,12 @@ Pod::Spec.new do |s|
             :tag => s.version 
   }
 
-  # 需要包含的源文件
-  s.source_files = "XYAlertHUD/*.{h,m}","XYAlertHUD/Lacoo/*.{h,m}"
-
+ # 需要包含的源文件
+  s.source_files = "XYAlertHUD/*.{h,m}","XYAlertHUD/Lancoo/*.{h,m}"
   
   s.subspec "AlertView" do |ss|
     ss.source_files =  "XYAlertHUD/AlertView/*.{h,m}"
-  end
+end
 
    # 资源文件
   s.resources = "XYAlertHUD/XYAlertHUD.bundle"
